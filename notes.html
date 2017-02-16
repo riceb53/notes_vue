@@ -1,0 +1,17 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="application">
+  <button v-on:click='addNote'>Make a new note</button>
+
+  <div v-for="(note, index, searchParameter) in notes">
+    <div v-on:click='switchNote(index)' style='background-color:grey'>
+      <p>{{ note.date }}</p>
+      <p>{{ note.content }}</p>
+    </div>
+  </div>
+  <div>
+    <textarea v-model='notes[currentNote].content'></textarea>
+  </div>
+</div>
+
+<script src="notes.js"></script>
