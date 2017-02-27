@@ -11,7 +11,7 @@ var application = new Vue({
   },
   methods: {
     addNote: function() {
-      this.currentNote = this.notes.length
+      this.currentNote = this.notes.length;
       this.notes.push({
         date: new Date(),
         content: "Write your note here"
