@@ -1,5 +1,3 @@
-console.log('hi')
-
 var application = new Vue({
   el: '#application',
   data: {
