@@ -2,7 +2,6 @@
 
 <div id="application">
   <button v-on:click='addNote'>Make a new note</button>
-
   <div v-for="(note, index, searchParameter) in notes">
     <div v-on:click='switchNote(index)' style='background-color:grey'>
       <p>{{ note.date }}</p>
